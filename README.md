@@ -39,7 +39,7 @@ DevCase was designed for developers and IT professionals. It is a tool to help y
 
 **Demo/Example:** [rburkhardt.com](https://rburkhardt.com/)
 
-[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/rob32/dev-case/tree/prod-app-platform)
+[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/Adrianthebeloved/dev-blog/tree/production)
 
 # Table of contents
 
@@ -94,7 +94,7 @@ For deployment/production there are two branches at the moment:
 
  For DigitalOcean’s App Platform you can use the "Deploy to DigitalOcean" button below. Please make sure you have a working S3 space/bucket with the required credentials. Guide: [How To Create a DigitalOcean Space and API Key](https://www.digitalocean.com/community/tutorials/how-to-create-a-digitalocean-space-and-api-key)
 
- [![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/rob32/dev-case/tree/prod-app-platform)
+ [![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/Adrianthebeloved/dev-blog/tree/production)
 
  **After the build process completes:**
 
