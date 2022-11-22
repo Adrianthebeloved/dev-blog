@@ -6,36 +6,58 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pages', '0001_initial'),
+        ("pages", "0001_initial"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='aboutsiteconfig',
-            name='seo_description',
+            model_name="aboutsiteconfig",
+            name="seo_description",
         ),
         migrations.RemoveField(
-            model_name='indexsiteconfig',
-            name='seo_description',
+            model_name="indexsiteconfig",
+            name="seo_description",
         ),
         migrations.AddField(
-            model_name='aboutsiteconfig',
-            name='seo',
-            field=models.TextField(blank=True, default=None, max_length=255, null=True, verbose_name='SEO Description'),
+            model_name="aboutsiteconfig",
+            name="seo",
+            field=models.TextField(
+                blank=True,
+                default=None,
+                max_length=255,
+                null=True,
+                verbose_name="SEO Description",
+            ),
         ),
         migrations.AddField(
-            model_name='indexsiteconfig',
-            name='seo',
-            field=models.TextField(blank=True, default=None, max_length=255, null=True, verbose_name='SEO Description'),
+            model_name="indexsiteconfig",
+            name="seo",
+            field=models.TextField(
+                blank=True,
+                default=None,
+                max_length=255,
+                null=True,
+                verbose_name="SEO Description",
+            ),
         ),
         migrations.AlterField(
-            model_name='aboutsiteconfig',
-            name='markdown_content',
-            field=models.TextField(blank=True, default='\n\n## Lorem Ipsum\n\nLorem ipsum dolor sit amet, **consectetur**.\nLorem ipsum dolor sit amet, __consectetur__.\nLorem ipsum dolor sit amet, `consectetur`...\n\n## Ipsum Lorem\n\nLorem ipsum dolor sit amet, **consectetur**.\nLorem ipsum dolor sit amet, __consectetur__.\nLorem ipsum dolor sit amet, `consectetur`...\n\n', help_text='Main About-Content. Markdown supported', max_length=4095, null=True),
+            model_name="aboutsiteconfig",
+            name="markdown_content",
+            field=models.TextField(
+                blank=True,
+                default="\n\n## Lorem Ipsum\n\nLorem ipsum dolor sit amet, **consectetur**.\nLorem ipsum dolor sit amet, __consectetur__.\nLorem ipsum dolor sit amet, `consectetur`...\n\n## Ipsum Lorem\n\nLorem ipsum dolor sit amet, **consectetur**.\nLorem ipsum dolor sit amet, __consectetur__.\nLorem ipsum dolor sit amet, `consectetur`...\n\n",
+                help_text="Main About-Content. Markdown supported",
+                max_length=4095,
+                null=True,
+            ),
         ),
         migrations.AlterField(
-            model_name='page',
-            name='content',
-            field=models.TextField(default='\n\n## Lorem Ipsum\n\nLorem ipsum dolor sit amet, **consectetur**.\nLorem ipsum dolor sit amet, __consectetur__.\nLorem ipsum dolor sit amet, `consectetur`...\n\n## Ipsum Lorem\n\nLorem ipsum dolor sit amet, **consectetur**.\nLorem ipsum dolor sit amet, __consectetur__.\nLorem ipsum dolor sit amet, `consectetur`...\n\n', help_text='Markdown supported.', max_length=2055),
+            model_name="page",
+            name="content",
+            field=models.TextField(
+                default="\n\n## Lorem Ipsum\n\nLorem ipsum dolor sit amet, **consectetur**.\nLorem ipsum dolor sit amet, __consectetur__.\nLorem ipsum dolor sit amet, `consectetur`...\n\n## Ipsum Lorem\n\nLorem ipsum dolor sit amet, **consectetur**.\nLorem ipsum dolor sit amet, __consectetur__.\nLorem ipsum dolor sit amet, `consectetur`...\n\n",
+                help_text="Markdown supported.",
+                max_length=2055,
+            ),
         ),
     ]

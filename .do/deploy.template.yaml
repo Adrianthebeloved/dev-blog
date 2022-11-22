@@ -1,10 +1,10 @@
 spec:
-  name: dev-case
+  name: dev-blog
   services:
     - name: django
       git:
-        branch: prod-app-platform
-        repo_clone_url: https://github.com/rob32/dev-case.git
+        branch: dev-blog
+        repo_clone_url: https://github.com/Adrianthebeloved/dev-blog.git
       envs:
         - key: SECRET_KEY
           scope: RUN_AND_BUILD_TIME
@@ -72,7 +72,7 @@ spec:
       http_port: 8080
       routes:
         - path: /
-      run_command: gunicorn dev_case.wsgi:application --bind 0.0.0.0:8080 --worker-tmp-dir /dev/shm
+      run_command: gunicorn dev_blog.wsgi:application --bind 0.0.0.0:8080 --worker-tmp-dir /dev/shm
       source_dir: /
   databases:
     - engine: PG

@@ -8,23 +8,30 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Contact',
+            name="Contact",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=63)),
-                ('message', models.TextField(max_length=767)),
-                ('email', models.EmailField(max_length=63)),
-                ('date', models.DateTimeField(default=django.utils.timezone.now)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=63)),
+                ("message", models.TextField(max_length=767)),
+                ("email", models.EmailField(max_length=63)),
+                ("date", models.DateTimeField(default=django.utils.timezone.now)),
             ],
             options={
-                'verbose_name': 'Message',
-                'verbose_name_plural': 'Messages',
-                'ordering': ['-date'],
+                "verbose_name": "Message",
+                "verbose_name_plural": "Messages",
+                "ordering": ["-date"],
             },
         ),
     ]

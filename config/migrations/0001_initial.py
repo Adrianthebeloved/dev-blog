@@ -7,38 +7,85 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='MainConfig',
+            name="MainConfig",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('site_name', models.CharField(default='dev-case.com', max_length=255)),
-                ('favicon', models.ImageField(upload_to='')),
-                ('copyright_footer', models.CharField(default='Your Name © 2022', max_length=255)),
-                ('email_adresse', models.CharField(default='email [@] adress [dot] com', max_length=255)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("site_name", models.CharField(default="dev-case.com", max_length=255)),
+                ("favicon", models.ImageField(upload_to="")),
+                (
+                    "copyright_footer",
+                    models.CharField(default="Your Name © 2022", max_length=255),
+                ),
+                (
+                    "email_adresse",
+                    models.CharField(
+                        default="email [@] adress [dot] com", max_length=255
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Main Settings',
+                "verbose_name": "Main Settings",
             },
         ),
         migrations.CreateModel(
-            name='SocialAccountsConfig',
+            name="SocialAccountsConfig",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('github', models.CharField(blank=True, default='', max_length=255, null=True)),
-                ('gitlab', models.CharField(blank=True, default='', max_length=255, null=True)),
-                ('isntagramm', models.CharField(blank=True, default='', max_length=255, null=True)),
-                ('linkedin', models.CharField(blank=True, default='', max_length=255, null=True)),
-                ('mastadon', models.CharField(blank=True, default='', max_length=255, null=True)),
-                ('twitter', models.CharField(blank=True, default='', max_length=255, null=True)),
-                ('xing', models.CharField(blank=True, default='', max_length=255, null=True)),
-                ('youtube', models.CharField(blank=True, default='', max_length=255, null=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "github",
+                    models.CharField(blank=True, default="", max_length=255, null=True),
+                ),
+                (
+                    "gitlab",
+                    models.CharField(blank=True, default="", max_length=255, null=True),
+                ),
+                (
+                    "isntagramm",
+                    models.CharField(blank=True, default="", max_length=255, null=True),
+                ),
+                (
+                    "linkedin",
+                    models.CharField(blank=True, default="", max_length=255, null=True),
+                ),
+                (
+                    "mastadon",
+                    models.CharField(blank=True, default="", max_length=255, null=True),
+                ),
+                (
+                    "twitter",
+                    models.CharField(blank=True, default="", max_length=255, null=True),
+                ),
+                (
+                    "xing",
+                    models.CharField(blank=True, default="", max_length=255, null=True),
+                ),
+                (
+                    "youtube",
+                    models.CharField(blank=True, default="", max_length=255, null=True),
+                ),
             ],
             options={
-                'verbose_name': 'Social Accounts',
+                "verbose_name": "Social Accounts",
             },
         ),
     ]
