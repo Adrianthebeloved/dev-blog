@@ -30,7 +30,7 @@ class Category(models.Model):
 
 class BlogPost(models.Model):
     STATUS = (
-        (0, "Draft-"),
+        (0, "Draft"),
         (1, "Published"),
     )
     title = models.CharField(
